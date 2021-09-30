@@ -1,0 +1,561 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,800;1,300;1,600&display=swap');
+
+/* Vars */
+
+:root{
+    --primary-color:#f87567;
+    --secondary-color:#FF9292;
+    font-family: 'Raleway';
+    font-weight: 400;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* start header styles index.html and others*/
+header{
+    width: 100vw;
+    height: 80vh;
+    background-color: #1f2325;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#headerTop_container{
+    width: 100vw;
+    height: 15vh;
+    padding: 0 1.5rem;
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo{
+    height: 10vh;
+}
+
+/* toggle botons */
+#toggle_navbar{
+    display: none;
+}
+
+label[for="toggle_navbar"] #open_toggle{
+    font-size:4rem;
+    color: var(--primary-color);
+}
+
+label[for="toggle_navbar"] #close_toggle{
+    display: none;
+    font-size:2.5rem;
+    color: var(--primary-color);
+}
+
+#toggle_navbar:checked + label #open_toggle{
+    display: none;
+}
+
+#toggle_navbar:checked + label #close_toggle{
+    display: block;
+}
+
+#navbar{
+    width: 100vw;
+    padding: 1rem;
+    background-color: #1f2325;
+    position: absolute;
+    top: 15vh;
+    left: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(-150%);
+    transition: all 400ms linear;
+}
+
+#toggle_navbar:checked ~ #navbar{
+    transform: translateY(0);
+}
+
+#navbar a ~ a{
+    margin-top: 1rem;
+}
+
+#navbar a{
+    width: 75%;
+    padding: .5rem;
+    text-decoration: none;
+    color: var(--primary-color);
+    transition: all 2s;
+}
+
+#navbar a:active{
+    text-decoration: underline;
+    text-decoration-color:var(--primary-color);
+}
+
+#website-title {
+    width: 100vw;
+    height: 65vh;
+    padding-left: 15vw;
+    padding-top: 12vh;
+    background-color: #0000005c;
+    color: #FFF;
+    position: absolute;
+    top: 15vh;
+    letter-spacing: 4px;
+    line-height: 5rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+/* Main styles */
+main{
+    width: 100vw;
+    background-color: #1f2325;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 0rem;
+    min-height: 10rem;
+}
+
+#website-subtitle {
+    color: var(--primary-color);
+    font-size: 1.25rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+/* section and elements inside it styles */
+section {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: justify;
+    color: #ffffff;
+}
+
+#mainList_container dd ~ dt{
+    margin: 1.5rem 0 .5rem 0;
+}
+
+#mainList_container .section-subititle:first-child{
+    margin-bottom: .5rem;
+}
+
+.section-subititle {
+    text-transform: uppercase;
+    font-size: .85rem;
+    margin: 1.5rem 0 1rem;
+}
+
+.underline-style {
+    text-decoration: underline;
+    margin: 20px 0px;
+}
+
+.section-text-indent {
+    text-indent: 1.875rem;
+}
+
+/* font size of content */
+#mainList_container > dd,
+#infoMdhl-container li p ~ p{
+    line-height: 17px;
+    font-size: 0.8125rem;
+    text-align: justify;
+}
+
+/* Lists of rules.html */
+.rules-text-bold {
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+.regulations-list {
+    list-style: none;
+}
+
+.regulations-list > li ~ li{
+    margin-top: 1.3rem;
+}
+
+.regulations-list > li > p:first-child{
+    color: var(--secondary-color);
+    margin-bottom: .5rem;
+}
+
+.age-list {
+    padding-left: 1.5rem;
+    list-style-type: lower-latin;
+}
+
+.age-list li{
+    margin-bottom: 1rem;
+}
+
+.all-play-list {
+    padding-top: 1rem;
+    padding-left: 1rem;
+    list-style: circle;
+}
+
+/* Table styles*/
+
+table {
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    display: block;
+    overflow: scroll;
+}
+
+thead, tbody{
+    text-align: center;
+}
+
+.columns-tables {
+    min-width: 120px;
+}
+
+iframe{
+    width: 130px;
+    height: 80px;
+}
+
+#infoMdhl-container li {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+
+#infoMdhl-container li p:first-child {
+    color: var(--secondary-color);
+    flex: .5 1 auto;
+    margin-right: .3rem;
+}
+
+#infoMdhl-container li .itemFlex:first-child{
+    margin-bottom:1rem;
+}
+
+.mail-mighty-ducks {
+    color: #ffffff;
+    text-decoration: none;
+    transition: all 250ms;
+}
+
+.mail-mighty-ducks:hover{
+    text-decoration: underline;
+    color:var(--primary-color);
+}
+
+/* form styles */
+form{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+}
+
+form > fieldset {
+    border: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.label_container {
+    border: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.label_container > label,
+.label_container + label{
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
+
+input[type="text"]{
+    width: 100%;
+    font-size: .9rem;
+    padding: .5rem 0 .5rem .5rem;
+}
+
+input[type="date"]{
+    padding: .2rem 0;
+}
+
+.legend_element{
+    color: var(--primary-color);
+}
+
+.birth_gender_container {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: .2rem;
+    margin-bottom: 1rem;
+}
+
+.birth_gender_container > fieldset {
+    border: 1px solid #fff;
+    padding: .2rem .5rem;
+    flex: 1 1 auto;
+}
+
+.genderBox{
+    flex-direction: column;
+}
+
+#grade{
+    margin:.5rem 0 1rem 1rem;
+    padding:.3rem 
+}
+
+.radioBox {
+    border: 1px solid #fff;
+    padding: 0 1rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: end;
+}
+
+.last_text_form{
+    margin-bottom: 1.5rem;
+}
+
+.signing_box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.signing_box ~ .signing_box{
+    margin-top: 1rem;
+}
+
+.signing_box input{
+    width: 70%;
+    margin-left: 1rem;
+}
+
+.submiting_button {
+    height: 2.5rem;
+    width: 30%;
+    margin: 1.5rem 0;
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    border-radius: 0rem;
+}
+
+/* footer */
+footer {
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (min-width: 768px){
+
+    header{
+        background-image: url("../assets/background-header.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position:0 1.5rem;
+    }
+
+    #headerTop_container{
+        background-color: #1f2325;
+        padding: 0 1rem;
+    }
+
+    #logo{
+        margin-left: 20%;
+    }
+
+    #toggle_navbar:checked + label #close_toggle,
+    label[for="toggle_navbar"] #open_toggle{
+        display: none;
+    }
+
+    #navbar{
+        width: auto;
+        height: 100%;
+        padding: 1rem .5rem;
+        position: initial;
+        flex-direction: row;
+        transform: none;
+    }
+
+    #navbar a ~ a{
+        margin-top: 0;
+    }
+
+    #navbar a{
+        width: auto;
+        padding: 0.8rem;
+        font-size: .8rem;
+    }
+
+    #website-title{
+        padding-left: 8vw;
+        padding-top: 9vh;
+        letter-spacing: 1px;
+        line-height: 5rem;
+        font-size: 3.5rem;
+    }
+
+    #website-subtitle {
+        font-size: 1.8rem;
+    }
+
+    #mainList_container dd ~ dt{
+        margin-top:3.5rem;
+    }
+
+    .regulations-list > li ~ li {
+        margin-top: 1.8rem;
+    }
+
+    .section-subititle,
+    .regulations-list > li > p:first-child {
+        font-size: 1.2rem;
+    }
+
+    #mainList_container > dd,
+    #infoMdhl-container li p ~ p {
+        font-size: 0.9375rem;
+        flex: 10 1 auto;
+    }
+
+    .age-list {
+        padding-left: 3rem;
+    }
+        
+    .age-list li {
+        margin-bottom: 1.5rem;
+    }
+
+    #infoMdhl-container li {    
+        flex-direction: row;
+        align-items: end;
+    }
+
+    #infoMdhl-container li .itemFlex:first-child {
+        margin-bottom: 0;
+    }
+
+    .infoMdhl_item{
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media only screen and (min-width: 992px){
+    #logo{
+        width: 14vh;
+    }
+    
+    #navbar a{
+        font-size: 1.2rem;
+    }
+
+    #navbar a:hover{
+        text-decoration: underline;
+        text-decoration-color:var(--primary-color);
+    }
+
+    #website-subtitle {
+        font-size: 2rem;
+    }
+
+    .regulations-list > li ~ li {
+        margin-top: 2rem;
+    }
+
+    .section-subititle,
+    .regulations-list > li > p:first-child {
+        font-size: 1.5rem;
+    }
+
+    #mainList_container > dd,
+    #infoMdhl-container li p ~ p {
+        font-size: 1.125rem;
+        line-height: normal;
+    }
+
+    .age-list li {
+        margin-bottom: 2rem;
+    }
+
+    .underline-style {
+        font-size: 1.2rem;
+    }
+
+    .columns-tables {
+        min-width: 150px;
+    }
+
+    form{
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    #navbar a {
+        font-size: 1.2rem;
+    }
+
+    #website-title {
+        padding-top: 16vh;
+        font-size: 5rem;
+        line-height: 6rem;
+    }
+
+    #website-subtitle {
+        font-size: 2.5rem;
+    }
+
+    section{
+        width: 70%;
+    }
+
+    #mainList_container dd ~ dt {
+        margin-top: 4.5rem;
+    }
+
+    .section-subititle,
+    .regulations-list > li > p:first-child {
+        font-size: 1.6rem;
+    }
+
+    #mainList_container > dd,
+    #infoMdhl-container li p ~ p {
+        font-size: 1.2813rem;
+    }
+
+    .columns-tables {
+        min-width: 180px;
+    }
+
+    form{
+        width: 75%;
+    }
+}

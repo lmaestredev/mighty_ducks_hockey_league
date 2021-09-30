@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form - MDHL</title>
+    <link rel="stylesheet" href="styles/mdhl5.css">
+</head>
+
+<body>
+
+    <header>
+        <div id="headerTop_container">
+            <a href="index.html"><img src="assets/logo-mighty-ducks-01.png" alt="logo mighty ducks" id="logo" title="mighty ducks's logo"></a>
+            
+            <input type="checkbox" id="toggle_navbar">
+            <label for="toggle_navbar">
+                <span id="open_toggle">&equiv;</span>
+                <span id="close_toggle">&#10006;</span>
+            </label>
+           
+            <nav id="navbar">
+                <a href="index.html"        class="nav-link">Home             </a>
+                <a href="about.html"        class="nav-link">About MDHL       </a>
+                <a href="rules.html"        class="nav-link">Rules            </a>
+                <a href="game_info.html"    class="nav-link">Game Information </a>
+                <a href="registration.html" class="nav-link">Registration Form</a>
+                <a href="contact.html"      class="nav-link">Contact Us       </a>
+            </nav>  
+        </div>
+
+        <h1 id="website-title">Mighty Ducks<br>Hockey League</h1>
+    </header>
+
+    <main>
+        <h2 id="website-subtitle">Registration Form</h2>
+
+        <section class="section-contact">
+            
+            <form action="./show_data.html" method="get">
+                <fieldset>
+                   <fieldset class="label_container">
+                        <label for="firstName">
+                            <input type="text" id="firstName" name="first_name" placeholder="Player's first name">
+                        </label>
+
+                        <label for="lastName">
+                            <input type="text" id="lastName" name="last_name" placeholder="Player's last name">
+                        </label>  
+                    </fieldset>
+
+                    <label>
+                        <input type="text" id="address" name="address" placeholder="Street address">
+                    </label>
+
+                    <fieldset class="label_container">
+                        <label for="city">
+                            <input type="text" id="city" name="city" placeholder="City">
+                        </label>
+
+                        <label for="zipCode">
+                            <input type="text" id="zipCode" name="zip_code" placeholder="Zip code">
+                        </label>  
+                    </fieldset>
+
+                    <fieldset class="label_container birth_gender_container">
+                        <fieldset id="birthdayBox" class="label_container"> 
+                            <legend class="legend_element">BIRTH DAY:</legend>
+                            <label>
+                                <input type="date" name="birth_date">
+                            </label>
+                        </fieldset>
+
+                        <fieldset class="label_container radioBox genderBox">
+                            <legend class="legend_element">GENDER</legend>
+                            <label>
+                                Female
+                                <input type="radio" name="gender" value="female">
+                            </label> 
+                            <label>
+                                Male
+                                <input type="radio" name="gender" value="male">
+                            </label>
+                        </fieldset>
+                    </fieldset>  
+                
+                    <fieldset class="label_container radioBox">
+                        
+                        <label for="grade" class="legend_element">GRADE:</label>
+                        <select name="grade" id="grade">
+                            <optgroup label="Select a grade">
+                                <option value="preSchool">Pre School</option>
+                                <option value="firstGrade">1st</option>
+                                <option value="secondGrade">2nd</option>
+                                <option value="thirdGrade">3rd</option>
+                                <option value="forthGrade">4th</option>
+                                <option value="fifthGrade">5th</option>
+                            </optgroup>
+                        </select>
+                        
+                    </fieldset>     
+                </fieldset>
+
+                <h3 class="section-subititle">Which elementary school do you live near?</h3>
+
+                <fieldset class="label_container radioBox">
+                    <legend class="legend_element">CLOSEST SCHOOL</legend>
+                    <label class="school_item">
+                        AJ Katzenmaier
+                        <input type="checkbox" name="school" value="ajKatzenmaier">
+                    </label>
+
+                    <label class="school_item">
+                        Greenbay
+                        <input type="checkbox" name="school" value="greenbay">
+                    </label>
+
+                    <label class="school_item">
+                        Howard A Yeager
+                        <input type="checkbox" name="school" value="howard_a_yeager">
+                    </label>
+
+                    <label class="school_item">
+                        Marjorie P Hart
+                        <input type="checkbox" name="school" value="marjorie_p_hart">
+                    </label>
+
+                    <label class="school_item">
+                        North Elementary
+                        <input type="checkbox" name="school" value="northElementary">
+                    </label>
+
+                    <label class="school_item">
+                        South Elementary
+                        <input type="checkbox" name="school" value="southElementary">
+                    </label>
+                </fieldset>
+                
+                <h3 class="section-subititle">Which position&#40;s&#41; do you normally play? &#40;check all that apply&#41;</h3>
+
+                <fieldset class="label_container radioBox">
+                    <legend class="legend_element">POSITION</legend>
+                    <label class="position_item">
+                        Forward
+                        <input type="checkbox" name="game_position" value="forward">
+                    </label>
+
+                    <label class="position_item">
+                        Defense
+                        <input type="checkbox" name="game_position" value="defense">
+                    </label>
+
+                    <label class="position_item">
+                        Midfield
+                        <input type="checkbox" name="game_position" value="midfield">
+                    </label>
+
+                    <label class="position_item">
+                        Goalkeeper
+                        <input type="checkbox" name="game_position" value="goalkeeper">
+                    </label>
+
+                </fieldset>
+
+                <h3 class="section-subititle">Uniform size</h3>
+
+                <fieldset class="label_container radioBox">
+                    <legend class="legend_element">SIZE</legend>
+                    <label class="size_item">
+                        Youth small
+                        <input type="radio" name="size" value="youth_small">
+                    </label>
+
+                    <label class="size_item">
+                        Youth large
+                        <input type="radio" name="size" value="youth_large">
+                    </label>
+
+                    <label class="size_item">
+                        Small
+                        <input type="radio" name="size" value="small">
+                    </label>
+
+                    <label class="size_item">
+                        Medium
+                        <input type="radio" name="size" value="medium">
+                    </label>
+
+                    <label class="size_item">
+                        Large
+                        <input type="radio" name="size" value="large">
+                    </label>
+
+                    <label class="size_item">
+                        Extra large
+                        <input type="radio" name="size" value="extra_large">
+                    </label>
+
+                </fieldset>
+
+                <h3 class="section-subititle">Permission to play</h3>
+
+                <p>I, the parent or guardian of the minor registrant, agree that the registrant and I will abide by all the rules of the Mighty Ducks Hockey League&#40;MDHL&#41;. In recognizing the possibility of physical injury associated with hockey and in consideration for the "League" accepting the registrant for its hockey programs and activities, I here by release, discharge, and/or otherwise indemnify MDHL, their employees and associated personnel and volunteers, including the facilities used for practices and games, against any claim by or on be half of the registrant as a result of the registrant's participation in the programand/or being transported to or from MDHL sponsored activities, which transportation.</p>
+                <p class="last_text_form">By entering your name below, I here by agree and authorized the above. In addition, by signing below, I also acknowledge that I have read the cancellation policy and agree to its terms.</p>
+
+                <label class="signing_box legend_element">
+                    <p> Parent / Guardian Signature:</p>
+                    <input type="text" name="signing" id="signing" placeholder="Parent / Guardian signature">
+                </label>
+
+                <label class="signing_box legend_element">
+                    <p> Date: </p>
+                    <input type="date" name="date">
+                </label>
+
+                <input type="submit" value="submit" class="submiting_button">
+            </form>
+        </section>
+    </main> 
+    
+    <footer>
+        <p>&copy;Luis Maestre - 2021</p>
+    </footer>
+</body>
+</html>
