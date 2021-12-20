@@ -18,7 +18,7 @@
 
 /* start header styles index.html and others*/
 header{
-    width: 100vw;
+    width: 100%;
     height: 80vh;
     background-color: #1f2325;
     display: flex;
@@ -27,7 +27,7 @@ header{
 }
 
 #headerTop_container{
-    width: 100vw;
+    width: 100%;
     height: 15vh;
     padding: 0 1.5rem;
     position: absolute;
@@ -66,7 +66,7 @@ label[for="toggle_navbar"] #close_toggle{
 }
 
 #navbar{
-    width: 100vw;
+    width: 100%;
     padding: 1rem;
     background-color: #1f2325;
     position: absolute;
@@ -103,7 +103,7 @@ label[for="toggle_navbar"] #close_toggle{
 }
 
 #website-title {
-    width: 100vw;
+    width: 100%;
     height: 65vh;
     padding-left: 15vw;
     padding-top: 12vh;
@@ -119,7 +119,7 @@ label[for="toggle_navbar"] #close_toggle{
 
 /* Main styles */
 main{
-    width: 100vw;
+    width: 100%;
     background-color: #1f2325;
     display: flex;
     flex-direction: column;
@@ -474,16 +474,12 @@ footer {
     }
     
     #navbar a{
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     #navbar a:hover{
         text-decoration: underline;
         text-decoration-color:var(--primary-color);
-    }
-
-    #website-subtitle {
-        font-size: 2rem;
     }
 
     .regulations-list > li ~ li {
@@ -519,18 +515,11 @@ footer {
 }
 
 @media only screen and (min-width: 1200px){
-    #navbar a {
-        font-size: 1.2rem;
-    }
 
     #website-title {
         padding-top: 16vh;
-        font-size: 5rem;
+        font-size: 3.5rem;
         line-height: 6rem;
-    }
-
-    #website-subtitle {
-        font-size: 2.5rem;
     }
 
     section{
@@ -539,16 +528,6 @@ footer {
 
     #mainList_container dd ~ dt {
         margin-top: 4.5rem;
-    }
-
-    .section-subititle,
-    .regulations-list > li > p:first-child {
-        font-size: 1.6rem;
-    }
-
-    #mainList_container > dd,
-    #infoMdhl-container li p ~ p {
-        font-size: 1.2813rem;
     }
 
     .columns-tables {
